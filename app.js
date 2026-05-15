@@ -11,3 +11,4 @@ app.use('/api/contatos', contatoRoutes);
 // Conectar ao banco e iniciar o servidor
 conectarBanco();
 const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('Servidor rodando na porta $(PORT)'));
